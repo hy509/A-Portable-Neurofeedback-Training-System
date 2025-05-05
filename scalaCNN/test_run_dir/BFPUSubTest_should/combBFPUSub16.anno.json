@@ -1,0 +1,22 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir\\BFPUSubTest_should\\combBFPUSub16.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~combBFPUSub16|combBFPUSub16>io_minC",
+    "sources":[
+      "~combBFPUSub16|combBFPUSub16>io_minA",
+      "~combBFPUSub16|combBFPUSub16>io_minB"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir\\BFPUSubTest_should"
+  }
+]

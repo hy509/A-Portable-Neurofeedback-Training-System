@@ -1,0 +1,22 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir\\BFPUMULTest_should\\pipeBFPUMul16.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~pipeBFPUMul16|pipeBFPUMul16>io_fpuReady",
+    "sources":[
+      "~pipeBFPUMul16|pipeBFPUMul16>io_fpuCReady",
+      "~pipeBFPUMul16|pipeBFPUMul16>io_fpuCValid"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir\\BFPUMULTest_should"
+  }
+]

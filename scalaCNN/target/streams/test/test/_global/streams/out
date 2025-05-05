@@ -1,0 +1,75 @@
+[0m[[0m[33mwarn[0m] [0m[0mjavaOptions will be ignored, fork is set to false[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(BFPUF2ITest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(FPUSubTest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(FPUMULTest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(FPUF2ITest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(FPUDivTest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(BFPUMULTest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(BFPUDivTest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(AccumulateMACTest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(FPUI2FTest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(VectorAccumulateTest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(MaxMACTest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(BasicFUSignTest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBFPUF2ITest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- BFPUF2ITest should [0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(BFPUI2FTest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFPUF2ITest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- FPUF2ITest should [0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(BFPUSubTest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBFPUMULTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- BFPUMULTest should [0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(BasicFUTest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBasicFUSignTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- BasicFUSignTest should [0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(BoothMultiplierBase4Test, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFPUMULTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- FPUMULTest should [0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(VectorMaxPoolTest, org.scalatest.tools.Framework$$anon$1@241274f4, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFPUI2FTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- FPUI2FTest should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBFPUDivTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- BFPUDivTest should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFPUDivTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- FPUDivTest should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFPUSubTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- FPUSubTest should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMaxMACTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- MaxMACTest should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBFPUI2FTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- BFPUI2FTest should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAccumulateMACTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- AccumulateMACTest should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBoothMultiplierBase4Test:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- MUL should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBasicFUTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- BasicFUTest should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBFPUSubTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- BFPUSubTest should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mVectorAccumulateTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- VectorAccumulateTest should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mVectorMaxPoolTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- VectorMaxPoolTest should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 45 seconds, 317 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 17[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 17, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 17, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MaxMACTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BFPUF2ITest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FPUSubTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VectorMaxPoolTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FPUDivTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FPUI2FTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BasicFUSignTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BFPUMULTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BoothMultiplierBase4Test[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BFPUI2FTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BFPUDivTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AccumulateMACTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BFPUSubTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FPUMULTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BasicFUTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FPUF2ITest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VectorAccumulateTest[0m

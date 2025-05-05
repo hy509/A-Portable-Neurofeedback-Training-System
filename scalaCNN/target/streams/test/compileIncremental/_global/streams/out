@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 152 products, 14 sources, 8 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/ChiselLib.scala, ${BASE}/cnnPE.scala, ${BASE}/matrixLoad.scala, ${BASE}/cnnTest.scala, ${BASE}/bfpuTest.scala, ${BASE}/pepe.scala, ${BASE}/fpu.scala, ${BASE}/bfpu.scala, ${BASE}/matrixLoadTest.scala, ${BASE}/Arbit.scala, ${BASE}/SyncMEM.scala, ${BASE}/CNNAccelerator.scala, ${BASE}/LibTest.scala, ${BASE}/fpuTest.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m

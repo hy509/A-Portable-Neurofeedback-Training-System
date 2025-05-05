@@ -1,0 +1,4 @@
+[debug] [scalacnn-test] Classpath dependencies List()
+[debug] [scalacnn-test] Dependencies from configurations List(scalacnn)
+[debug] Bloop wrote the configuration of project 'scalacnn-test' to 'D:\FPGA\scalaCNN\.bloop\scalacnn-test.json'
+[success] Generated .bloop\scalacnn-test.json

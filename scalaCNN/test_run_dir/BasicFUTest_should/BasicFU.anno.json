@@ -1,0 +1,23 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir\\BasicFUTest_should\\BasicFU.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~BasicFU|BasicFU>io_outC",
+    "sources":[
+      "~BasicFU|BasicFU>io_ins",
+      "~BasicFU|BasicFU>io_inA",
+      "~BasicFU|BasicFU>io_inB"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir\\BasicFUTest_should"
+  }
+]

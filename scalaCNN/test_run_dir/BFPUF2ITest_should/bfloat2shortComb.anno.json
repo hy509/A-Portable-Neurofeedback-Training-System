@@ -1,0 +1,21 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir\\BFPUF2ITest_should\\bfloat2shortComb.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~bfloat2shortComb|bfloat2shortComb>io_fpuC",
+    "sources":[
+      "~bfloat2shortComb|bfloat2shortComb>io_fpuA"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir\\BFPUF2ITest_should"
+  }
+]

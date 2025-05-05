@@ -1,0 +1,34 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir\\BasicFUSignTest_should\\BasicFUSign.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~BasicFUSign|BasicFUSign>io_overflow",
+    "sources":[
+      "~BasicFUSign|BasicFUSign>io_signedOrNot",
+      "~BasicFUSign|BasicFUSign>io_inA",
+      "~BasicFUSign|BasicFUSign>io_ins",
+      "~BasicFUSign|BasicFUSign>io_inB"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~BasicFUSign|BasicFUSign>io_outC",
+    "sources":[
+      "~BasicFUSign|BasicFUSign>io_ins",
+      "~BasicFUSign|BasicFUSign>io_inA",
+      "~BasicFUSign|BasicFUSign>io_signedOrNot",
+      "~BasicFUSign|BasicFUSign>io_inB"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir\\BasicFUSignTest_should"
+  }
+]

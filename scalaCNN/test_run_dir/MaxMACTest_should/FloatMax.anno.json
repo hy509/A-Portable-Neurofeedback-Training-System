@@ -1,0 +1,23 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir\\MaxMACTest_should\\FloatMax.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~FloatMax|FloatMax>io_inputReady",
+    "sources":[
+      "~FloatMax|FloatMax>io_inputValid",
+      "~FloatMax|FloatMax>io_outputValid",
+      "~FloatMax|FloatMax>io_outputReady"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir\\MaxMACTest_should"
+  }
+]

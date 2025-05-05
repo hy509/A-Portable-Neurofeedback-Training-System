@@ -1,0 +1,22 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir\\FPUMULTest_should\\pipeFPUMul32.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~pipeFPUMul32|pipeFPUMul32>io_fpuReady",
+    "sources":[
+      "~pipeFPUMul32|pipeFPUMul32>io_fpuCReady",
+      "~pipeFPUMul32|pipeFPUMul32>io_fpuCValid"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir\\FPUMULTest_should"
+  }
+]
