@@ -1,0 +1,662 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:33 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 14604
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sun Nov 10 15:00:51 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	E:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2
+Java executable: 	E:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Admin
+User home directory: C:/Users/Admin
+User working directory: D:/newCNNZ7/newCNNZ7
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: E:/Xilinx/Vivado
+HDI_APPROOT: E:/Xilinx/Vivado/2021.1
+RDI_DATADIR: E:/Xilinx/Vivado/2021.1/data
+RDI_BINDIR: E:/Xilinx/Vivado/2021.1/bin
+
+Vivado preferences file: C:/Users/Admin/AppData/Roaming/Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: C:/Users/Admin/AppData/Roaming/Xilinx/Vivado/2021.1/
+Vivado layouts directory: C:/Users/Admin/AppData/Roaming/Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	E:/Xilinx/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	D:/newCNNZ7/newCNNZ7/vivado.log
+Vivado journal file: 	D:/newCNNZ7/newCNNZ7/vivado.jou
+Engine tmp dir: 	D:/newCNNZ7/newCNNZ7/.Xil/Vivado-14604-szdn-2024NAUJRE
+
+Xilinx Environment Variables
+----------------------------
+INTELFPGAOCLSDKROOT: D:\intelFPGA\18.0\hld
+XILINX: E:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_DSP: E:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: E:/Xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: E:/Xilinx/Vivado/2021.1
+XILINX_SDK: E:/Xilinx/Vitis/2021.1
+XILINX_VITIS: E:/Xilinx/Vitis/2021.1
+XILINX_VIVADO: E:/Xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: E:/Xilinx/Vivado/2021.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,270 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 93 MB (+95437kb) [00:00:04]
+// [Engine Memory]: 1,270 MB (+1180633kb) [00:00:04]
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: D:\newCNNZ7\newCNNZ7\newCNNZ7.xpr. Version: Vivado v2021.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project D:/newCNNZ7/newCNNZ7/newCNNZ7.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 11/10/24, 3:00:52 PM CST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 110 MB (+12809kb) [00:00:11]
+// [GUI Memory]: 121 MB (+5157kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  3141 ms.
+// Tcl Message: open_project D:/newCNNZ7/newCNNZ7/newCNNZ7.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'G:/newCNNZ7/newCNNZ7' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/newCNNZ7/ip_repo/cnnRandomMem_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 1256.832 ; gain = 0.000 
+// Project name: newCNNZ7; location: D:/newCNNZ7/newCNNZ7; part: xc7z100ffv900-2
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// a (cs): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // D
+// [GUI Memory]: 156 MB (+30469kb) [00:00:20]
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 8); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// bz (cs):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: Reading block design file <D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/design_1.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  2211 ms.
+// [GUI Memory]: 171 MB (+7579kb) [00:00:31]
+// JavaFX intialization before: 1731222074314
+// JavaFX initialization after: 1731222074881
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Block Design"); // bz
+// Elapsed time: 12 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 656, 270, 1221, 530, false, false, false, true, false); // hR - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ak
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ak
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ak
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ak
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ak
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 934, 58); // dS
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// Tcl Command: 'set_property range 512K [get_bd_addr_segs {microblaze_0/Data/SEG_dlmb_bram_if_cntlr_Mem}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property range 512K [get_bd_addr_segs {microblaze_0/Data/SEG_dlmb_bram_if_cntlr_Mem}] 
+// Tcl Command: 'set_property range 512K [get_bd_addr_segs {microblaze_0/Instruction/SEG_ilmb_bram_if_cntlr_Mem}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property range 512K [get_bd_addr_segs {microblaze_0/Instruction/SEG_ilmb_bram_if_cntlr_Mem}] 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// [GUI Memory]: 186 MB (+7201kb) [00:00:59]
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 651, 278, 1221, 530, false, false, false, true, false); // hR - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ak
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // an
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// j (cs): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cs):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  2161 ms.
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name cnnRandomMem_v1_0_project -directory D:/newCNNZ7/newCNNZ7/newCNNZ7.tmp/cnnRandomMem_v1_0_project d:/newCNNZ7/ip_repo/cnnRandomMem_1.0/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.1/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/newCNNZ7/ip_repo/cnnRandomMem_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,301 MB. GUI used memory: 132 MB. Current time: 11/10/24, 3:01:52 PM CST
+// 'i' command handler elapsed time: 9 seconds
+dismissDialog("Edit in IP Packager"); // bz
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 42 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CNNAccelerator_v1_0 (CNNAccelerator_v1_0.v)]", 1, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CNNAccelerator_v1_0 (CNNAccelerator_v1_0.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CNNAccelerator_v1_0 (CNNAccelerator_v1_0.v), CNNAccelerator_v1_0_S00_AXI_inst : CNNAccelerator_v1_0_S00_AXI (CNNAccelerator_v1_0_S00_AXI.v), CNNInst : CNNAccelerator (CNNAccelerator.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CNNAccelerator_v1_0 (CNNAccelerator_v1_0.v), CNNAccelerator_v1_0_S00_AXI_inst : CNNAccelerator_v1_0_S00_AXI (CNNAccelerator_v1_0_S00_AXI.v), CNNInst : CNNAccelerator (CNNAccelerator.v), matrixLoadStore_2 : matrixLoadStore (CNNAccelerator.v)]", 6, false, false, false, false, false, true); // D - Double Click
+// [Engine Memory]: 1,390 MB (+59209kb) [00:02:05]
+// [GUI Memory]: 209 MB (+13593kb) [00:02:05]
+// WARNING: HEventQueue.dispatchEvent() is taking  9149 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,411 MB. GUI used memory: 162 MB. Current time: 11/10/24, 3:02:49 PM CST
+// [Engine Memory]: 1,502 MB (+44307kb) [00:02:10]
+// [GUI Memory]: 289 MB (+73353kb) [00:02:33]
+// Elapsed time: 113 seconds
+selectCodeEditor("CNNAccelerator.v", 262, 230); // bP
+typeControlKey((HResource) null, "CNNAccelerator.v", 'v'); // bP
+// WARNING: HEventQueue.dispatchEvent() is taking  1008 ms.
+// [GUI Memory]: 477 MB (+181762kb) [00:03:53]
+// [Engine Memory]: 1,886 MB (+323175kb) [00:03:53]
+// bz (cs):  Save File : addNotify
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save File"); // bz
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,889 MB. GUI used memory: 269 MB. Current time: 11/10/24, 3:04:37 PM CST
+// Elapsed time: 184 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - cnnRandomMem", 1); // m
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_IP_THAT_REQUIRE, "IP has been modified."); // h
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 30 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// bz (cs):  Package IP : addNotify
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bz (cs):  Package IP : addNotify
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,909 MB. GUI used memory: 199 MB. Current time: 11/10/24, 3:07:56 PM CST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bz
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_ip_catalog -rebuild -repo_path d:/newCNNZ7/ip_repo/cnnRandomMem_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/newCNNZ7/ip_repo/cnnRandomMem_1.0' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+selectButton(PAResourceQtoS.SystemTab_REPORT_IP_STATUS, "Report IP Status"); // h
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: upgrade_ip -vlnv xilinx.com:user:cnnRandomMem:1.0 [get_ips  design_1_cnnRandomMem_0_0] -log ip_upgrade.log 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// bz (cs):  Upgrade IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Upgrading 'D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/design_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded design_1_cnnRandomMem_0_0 (cnnRandomMem_v1.0 1.0) from revision 29 to revision 30 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [filemgmt 20-1667] Failed to open file "D:/vitiswokspace/MBCNN/Debug/MBCNN.elf" 
+// Tcl Message: Wrote  : <D:\newCNNZ7\newCNNZ7\newCNNZ7.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/newCNNZ7/newCNNZ7/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips design_1_cnnRandomMem_0_0] -no_script -sync -force -quiet 
+// aI (cs): Generate Output Products: addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cs):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files  D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate INFO: [filemgmt 20-1667] Failed to open file "D:/vitiswokspace/MBCNN/Debug/MBCNN.elf" 
+// Tcl Message: Wrote  : <D:\newCNNZ7\newCNNZ7\newCNNZ7.srcs\sources_1\bd\design_1\design_1.bd>  
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,025 MB (+47290kb) [00:07:34]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 196 MB. Current time: 11/10/24, 3:08:17 PM CST
+// Tcl Message: VHDL Output written to : d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/synth/design_1.v VHDL Output written to : d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/sim/design_1.v VHDL Output written to : d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram . 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block cnnRandomMem_0 . 
+// Tcl Message: Exporting to file d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2056.559 ; gain = 128.871 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all design_1_dlmb_bram_if_cntlr_0] } 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all design_1_ilmb_bram_if_cntlr_0] } 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all design_1_lmb_bram_0] } 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all design_1_cnnRandomMem_0_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/design_1.bd] 
+// Tcl Message: launch_runs design_1_dlmb_bram_if_cntlr_0_synth_1 design_1_ilmb_bram_if_cntlr_0_synth_1 design_1_lmb_bram_0_synth_1 design_1_cnnRandomMem_0_0_synth_1 -jobs 12 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 19 seconds
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Nov 10 15:08:33 2024] Launched design_1_dlmb_bram_if_cntlr_0_synth_1, design_1_ilmb_bram_if_cntlr_0_synth_1, design_1_lmb_bram_0_synth_1, design_1_cnnRandomMem_0_0_synth_1... Run output will be captured here: design_1_dlmb_bram_if_cntlr_0_synth_1: D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/runme.log design_1_ilmb_bram_if_cntlr_0_synth_1: D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_ilmb_bram_if_cntlr_0_synth_1/runme.log design_1_lmb_bram_0_synth_1: D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_lmb_bram_0_synth_1/runme.log design_1_cnnRandomMem_0_0_synth_1: D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_cnnRandomMem_0_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2056.559 ; gain = 0.000 
+// Tcl Message: export_simulation -of_objects [get_files D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/newCNNZ7/newCNNZ7/newCNNZ7.ip_user_files/sim_scripts -ip_user_files_dir D:/newCNNZ7/newCNNZ7/newCNNZ7.ip_user_files -ipstatic_source_dir D:/newCNNZ7/newCNNZ7/newCNNZ7.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/newCNNZ7/newCNNZ7/newCNNZ7.cache/compile_simlib/modelsim} {questa=D:/newCNNZ7/newCNNZ7/newCNNZ7.cache/compile_simlib/questa} {riviera=D:/newCNNZ7/newCNNZ7/newCNNZ7.cache/compile_simlib/riviera} {activehdl=D:/newCNNZ7/newCNNZ7/newCNNZ7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// HMemoryUtils.trashcanNow. Engine heap size: 2,067 MB. GUI used memory: 197 MB. Current time: 11/10/24, 3:08:39 PM CST
+selectButton("OptionPane.button", "OK"); // JButton
+dismissDialog("Managing Output Products"); // bz
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cs):  Re-customize IP : addNotify
+// [Engine Memory]: 2,305 MB (+187020kb) [00:08:11]
+// r (cs): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1377 ms.
+// Elapsed time: 10 seconds
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+// HMemoryUtils.trashcanNow. Engine heap size: 2,305 MB. GUI used memory: 230 MB. Current time: 11/10/24, 3:08:57 PM CST
+setText("CLKOUT1 REQUESTED OUT FREQ", "60", true); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {60} CONFIG.MMCM_CLKFBOUT_MULT_F {20.250} CONFIG.MMCM_CLKOUT0_DIVIDE_F {16.875} CONFIG.CLKOUT1_JITTER {180.523} CONFIG.CLKOUT1_PHASE_ERROR {162.874}] [get_bd_cells clk_wiz_1]'
+// TclEventType: FILE_SET_CHANGE
+// r (cs): Re-customize IP: addNotify
+// bz (r):  Customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {60} CONFIG.MMCM_CLKFBOUT_MULT_F {20.250} CONFIG.MMCM_CLKOUT0_DIVIDE_F {16.875} CONFIG.CLKOUT1_JITTER {180.523} CONFIG.CLKOUT1_PHASE_ERROR {162.874}] [get_bd_cells clk_wiz_1] 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bz
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 110, 158, 1221, 530, false, false, false, true, false); // hR - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ak
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ak
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "Validate Design"); // an
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design 
+// TclEventType: RSB_SCRIPT_TASK
+// bz (cs):  Validate Design : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate 
+dismissDialog("Validate Design"); // bz
+selectButton("OptionPane.button", "OK"); // JButton
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// bz (cs):  Save Design : addNotify
+// Tcl Message: save_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: INFO: [filemgmt 20-1667] Failed to open file "D:/vitiswokspace/MBCNN/Debug/MBCNN.elf" 
+// Tcl Message: Wrote  : <D:\newCNNZ7\newCNNZ7\newCNNZ7.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+dismissDialog("Save Design"); // bz
+selectTab((HResource) null, (HResource) null, "Design Runs", 5); // aK
+// HMemoryUtils.trashcanNow. Engine heap size: 2,325 MB. GUI used memory: 215 MB. Current time: 11/10/24, 3:09:17 PM CST
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "design_1 ;  ; Running Submodule Runs ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Tue Sep 24 11:52:29 CST 2024 ; 1,131:16:47 ;  ;  ;  ; ", 3); // az
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // o
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cs): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_microblaze_0_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_dlmb_v10_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_ilmb_v10_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_mdm_1_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_clk_wiz_1_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_rst_clk_wiz_1_100M_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_xbar_0_synth_1 
+// cD (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 6 seconds
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // cD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// bz (cs):  Generate Bitstream : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: VHDL Output written to : d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/synth/design_1.v VHDL Output written to : d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/sim/design_1.v VHDL Output written to : d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr . INFO: [Device 21-403] Loading part xc7z100ffv900-2 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 . 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M . 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar . 
+// Tcl Message: Exporting to file d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: RUN_RESET

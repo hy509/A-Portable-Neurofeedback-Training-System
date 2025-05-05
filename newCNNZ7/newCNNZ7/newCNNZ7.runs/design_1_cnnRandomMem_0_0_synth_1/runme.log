@@ -1,0 +1,1006 @@
+
+*** Running vivado
+    with args -log design_1_cnnRandomMem_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_cnnRandomMem_0_0.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_cnnRandomMem_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/newCNNZ7/ip_repo/cnnRandomMem_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.1/data/ip'.
+Command: synth_design -top design_1_cnnRandomMem_0_0 -part xc7z100ffv900-2 -directive PerformanceOptimized -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -shreg_min_size 5 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Device 21-403] Loading part xc7z100ffv900-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7968
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1393.645 ; gain = 110.562
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_cnnRandomMem_0_0' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ip/design_1_cnnRandomMem_0_0/synth/design_1_cnnRandomMem_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CNNAccelerator_v1_0' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'CNNAccelerator_v1_0_S00_AXI' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-226] default block is never used [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator_v1_0_S00_AXI.v:1257]
+INFO: [Synth 8-226] default block is never used [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator_v1_0_S00_AXI.v:5462]
+INFO: [Synth 8-6157] synthesizing module 'CNNAccelerator' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:255509]
+INFO: [Synth 8-6157] synthesizing module 'matrixLoadStore' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'matrixLoadStore' (1#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:1]
+INFO: [Synth 8-6157] synthesizing module 'resultStore' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:2670]
+INFO: [Synth 8-6155] done synthesizing module 'resultStore' (2#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:2670]
+INFO: [Synth 8-6157] synthesizing module 'memSys' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:4065]
+INFO: [Synth 8-6157] synthesizing module 'fifo_in' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:2791]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_in' (3#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:2791]
+INFO: [Synth 8-6157] synthesizing module 'fifo_in_16' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:2944]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_in_16' (4#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:2944]
+INFO: [Synth 8-6157] synthesizing module 'memBank' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:3204]
+INFO: [Synth 8-6157] synthesizing module 'Umem' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:3097]
+INFO: [Synth 8-6155] done synthesizing module 'Umem' (5#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:3097]
+INFO: [Synth 8-6155] done synthesizing module 'memBank' (6#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:3204]
+INFO: [Synth 8-6157] synthesizing module 'HEArbiter' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:3833]
+INFO: [Synth 8-6157] synthesizing module 'ArbiterPow2' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:3615]
+INFO: [Synth 8-6157] synthesizing module 'PriorMux' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:3579]
+INFO: [Synth 8-6157] synthesizing module 'PriorArbiter' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:3252]
+INFO: [Synth 8-6155] done synthesizing module 'PriorArbiter' (7#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:3252]
+INFO: [Synth 8-6157] synthesizing module 'Pos2Bin' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:3264]
+INFO: [Synth 8-6155] done synthesizing module 'Pos2Bin' (8#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:3264]
+INFO: [Synth 8-6155] done synthesizing module 'PriorMux' (9#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:3579]
+INFO: [Synth 8-6155] done synthesizing module 'ArbiterPow2' (10#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:3615]
+INFO: [Synth 8-6155] done synthesizing module 'HEArbiter' (11#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:3833]
+INFO: [Synth 8-6155] done synthesizing module 'memSys' (12#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:4065]
+INFO: [Synth 8-6157] synthesizing module 'VectorMAC' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:233360]
+INFO: [Synth 8-6157] synthesizing module 'MACCNN' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:233106]
+INFO: [Synth 8-6157] synthesizing module 'pipeFPUMul32' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228332]
+INFO: [Synth 8-6155] done synthesizing module 'pipeFPUMul32' (13#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228332]
+INFO: [Synth 8-6157] synthesizing module 'combFPUSub32' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:229518]
+INFO: [Synth 8-6155] done synthesizing module 'combFPUSub32' (14#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:229518]
+INFO: [Synth 8-6155] done synthesizing module 'MACCNN' (15#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:233106]
+INFO: [Synth 8-6155] done synthesizing module 'VectorMAC' (16#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:233360]
+INFO: [Synth 8-6157] synthesizing module 'VectorADD' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:234782]
+INFO: [Synth 8-6157] synthesizing module 'ADDCNN' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:234528]
+INFO: [Synth 8-6157] synthesizing module 'pipeFPUPass2' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:234345]
+INFO: [Synth 8-6155] done synthesizing module 'pipeFPUPass2' (17#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:234345]
+INFO: [Synth 8-6155] done synthesizing module 'ADDCNN' (18#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:234528]
+INFO: [Synth 8-6155] done synthesizing module 'VectorADD' (19#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:234782]
+INFO: [Synth 8-6157] synthesizing module 'VectorCompare' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:235896]
+INFO: [Synth 8-6157] synthesizing module 'FloatMax' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:235767]
+INFO: [Synth 8-6155] done synthesizing module 'FloatMax' (20#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:235767]
+INFO: [Synth 8-6155] done synthesizing module 'VectorCompare' (21#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:235896]
+INFO: [Synth 8-6157] synthesizing module 'distinctReadWrite' [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:237584]
+INFO: [Synth 8-6155] done synthesizing module 'distinctReadWrite' (22#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:237584]
+INFO: [Synth 8-6155] done synthesizing module 'CNNAccelerator' (23#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:255509]
+INFO: [Synth 8-6155] done synthesizing module 'CNNAccelerator_v1_0_S00_AXI' (24#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'CNNAccelerator_v1_0' (25#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_cnnRandomMem_0_0' (26#1) [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ip/design_1_cnnRandomMem_0_0/synth/design_1_cnnRandomMem_0_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:29 ; elapsed = 00:01:31 . Memory (MB): peak = 4108.988 ; gain = 2825.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 4108.988 ; gain = 2825.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 4108.988 ; gain = 2825.906
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 4108.988 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 4646.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.781 . Memory (MB): peak = 4646.559 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:03:31 ; elapsed = 00:03:26 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z100ffv900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:31 ; elapsed = 00:03:26 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:14 ; elapsed = 00:05:12 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 224   
+	   4 Input   32 Bit       Adders := 16    
+	   3 Input   32 Bit       Adders := 48    
+	   3 Input   28 Bit       Adders := 64    
+	   2 Input   28 Bit       Adders := 32    
+	   2 Input   23 Bit       Adders := 8     
+	   2 Input   16 Bit       Adders := 48    
+	   2 Input   10 Bit       Adders := 88    
+	   4 Input   10 Bit       Adders := 8     
+	   3 Input    8 Bit       Adders := 64    
+	   2 Input    8 Bit       Adders := 32    
+	   2 Input    4 Bit       Adders := 96    
++---XORs : 
+	   2 Input      1 Bit         XORs := 520   
++---Registers : 
+	              128 Bit    Registers := 32    
+	               48 Bit    Registers := 16    
+	               32 Bit    Registers := 817   
+	               23 Bit    Registers := 8     
+	               18 Bit    Registers := 32    
+	               16 Bit    Registers := 32    
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 8     
+	                8 Bit    Registers := 24    
+	                4 Bit    Registers := 48    
+	                2 Bit    Registers := 11    
+	                1 Bit    Registers := 588   
++---Multipliers : 
+	              32x32  Multipliers := 32    
++---RAMs : 
+	            1536K Bit	(49152 X 32 bit)          RAMs := 16    
+	              256 Bit	(8 X 32 bit)          RAMs := 16    
+	                8 Bit	(8 X 1 bit)          RAMs := 16    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 16    
+	   2 Input   46 Bit        Muxes := 8     
+	   2 Input   32 Bit        Muxes := 2136  
+	   9 Input   32 Bit        Muxes := 16    
+	   6 Input   32 Bit        Muxes := 16    
+	  10 Input   32 Bit        Muxes := 16    
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   28 Bit        Muxes := 64    
+	   2 Input   27 Bit        Muxes := 32    
+	   2 Input   24 Bit        Muxes := 128   
+	   2 Input   23 Bit        Muxes := 16    
+	   2 Input   16 Bit        Muxes := 96    
+	   4 Input   16 Bit        Muxes := 16    
+	   2 Input   10 Bit        Muxes := 16    
+	   2 Input    8 Bit        Muxes := 56    
+	  25 Input    6 Bit        Muxes := 32    
+	   2 Input    5 Bit        Muxes := 336   
+	   6 Input    4 Bit        Muxes := 16    
+	   2 Input    3 Bit        Muxes := 32    
+	   5 Input    3 Bit        Muxes := 16    
+	   8 Input    3 Bit        Muxes := 16    
+	   3 Input    2 Bit        Muxes := 16    
+	   4 Input    2 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 5960  
+	   5 Input    1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2020 (col length:140)
+BRAMs: 1510 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP _T_532, operation Mode is: A*B.
+DSP Report: operator _T_532 is absorbed into DSP _T_532.
+DSP Report: operator _T_532 is absorbed into DSP _T_532.
+DSP Report: Generating DSP _T_532, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_532 is absorbed into DSP _T_532.
+DSP Report: operator _T_532 is absorbed into DSP _T_532.
+DSP Report: Generating DSP _T_532, operation Mode is: A*B.
+DSP Report: operator _T_532 is absorbed into DSP _T_532.
+DSP Report: operator _T_532 is absorbed into DSP _T_532.
+DSP Report: Generating DSP _T_532, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_532 is absorbed into DSP _T_532.
+DSP Report: operator _T_532 is absorbed into DSP _T_532.
+DSP Report: Generating DSP _T_492, operation Mode is: A*B.
+DSP Report: operator _T_492 is absorbed into DSP _T_492.
+DSP Report: operator _T_492 is absorbed into DSP _T_492.
+DSP Report: Generating DSP _T_492, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_492 is absorbed into DSP _T_492.
+DSP Report: operator _T_492 is absorbed into DSP _T_492.
+DSP Report: Generating DSP _T_492, operation Mode is: A*B.
+DSP Report: operator _T_492 is absorbed into DSP _T_492.
+DSP Report: operator _T_492 is absorbed into DSP _T_492.
+DSP Report: Generating DSP _T_492, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_492 is absorbed into DSP _T_492.
+DSP Report: operator _T_492 is absorbed into DSP _T_492.
+DSP Report: Generating DSP _T_553, operation Mode is: A2*B.
+DSP Report: register forLColCnt1_reg is absorbed into DSP _T_553.
+DSP Report: operator _T_553 is absorbed into DSP _T_553.
+DSP Report: operator _T_553 is absorbed into DSP _T_553.
+DSP Report: Generating DSP _T_553, operation Mode is: A2*B.
+DSP Report: register _T_553 is absorbed into DSP _T_553.
+DSP Report: operator _T_553 is absorbed into DSP _T_553.
+DSP Report: operator _T_553 is absorbed into DSP _T_553.
+DSP Report: Generating DSP _T_553, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register _T_553 is absorbed into DSP _T_553.
+DSP Report: operator _T_553 is absorbed into DSP _T_553.
+DSP Report: operator _T_553 is absorbed into DSP _T_553.
+WARNING: [Synth 8-7129] Port reset in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[31] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[30] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[29] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[28] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[27] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[26] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[25] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[24] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[23] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[22] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[21] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[20] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[19] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[18] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[17] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[16] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[31] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[30] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[29] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[28] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[27] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[26] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[25] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[24] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[23] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[22] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[21] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[20] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[19] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[18] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[17] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[16] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[31] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[30] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[29] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[28] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[27] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[26] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[25] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[24] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[23] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[22] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[21] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[20] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[19] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[18] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[17] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[16] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[31] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[30] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[29] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[28] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[27] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[26] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[25] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[24] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[23] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[22] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[21] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[20] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[19] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[18] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[17] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress1[16] in module memBank is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[31] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[30] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[29] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[28] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[27] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[26] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[25] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[24] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[23] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[22] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[21] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[20] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[19] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[18] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[17] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress[16] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[31] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[30] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[29] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[28] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[27] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[26] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[25] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[24] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[23] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[22] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[21] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[20] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[19] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[18] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[17] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_wrAddress[16] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[31] in module memBank__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_rdAddress1[30] in module memBank__15 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM memSysInst/MemBank_reg to conserve power
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_1_0_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_2_1_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_2_0_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_3_1_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_3_2_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_3_0_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_4_1_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_4_2_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_4_3_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_4_0_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_5_1_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_5_2_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_5_3_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_5_4_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_5_0_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_6_1_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_6_2_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_6_3_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_6_4_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_6_5_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_6_0_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_7_1_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_7_2_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_7_3_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_7_4_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_7_5_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_7_6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_7_0_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_8_1_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_8_2_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_8_3_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_8_4_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_8_5_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_8_6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_8_7_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_8_0_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_9_1_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_9_2_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_9_3_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_9_4_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_9_5_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_9_6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_9_7_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_9_8_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_9_0_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_10_1_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_10_2_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_10_3_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_10_4_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_10_5_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_10_6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_10_7_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_10_8_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_10_9_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_10_0_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_11_1_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_11_2_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_11_3_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_11_4_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_11_5_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_11_6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_11_7_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_11_8_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_11_9_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_11_10_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_11_0_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_12_1_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_12_2_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_12_3_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_12_4_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_12_5_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_12_6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_12_7_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_12_8_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_12_9_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_12_10_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_12_11_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_12_0_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_13_1_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_13_2_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_13_3_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_13_4_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_13_5_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_13_6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_13_7_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_13_8_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_13_9_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_13_10_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_13_11_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_13_12_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_13_0_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_14_1_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_14_2_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_14_3_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_14_4_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_14_5_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_14_6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_14_7_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_14_8_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rdReadyVecReg_14_9_reg)
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '31' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '17' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+DSP Report: Generating DSP fpuMul/_T_163, operation Mode is: A*B.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: Generating DSP fpuMul/one_m_reg_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register fpuMul/one_m_reg_reg is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '31' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '17' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+DSP Report: Generating DSP fpuMul/_T_163, operation Mode is: A*B.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: Generating DSP fpuMul/one_m_reg_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register fpuMul/one_m_reg_reg is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '31' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '17' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+DSP Report: Generating DSP fpuMul/_T_163, operation Mode is: A*B.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: Generating DSP fpuMul/one_m_reg_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register fpuMul/one_m_reg_reg is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '31' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '17' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+DSP Report: Generating DSP fpuMul/_T_163, operation Mode is: A*B.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: Generating DSP fpuMul/one_m_reg_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register fpuMul/one_m_reg_reg is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '31' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '17' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+DSP Report: Generating DSP fpuMul/_T_163, operation Mode is: A*B.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: Generating DSP fpuMul/one_m_reg_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register fpuMul/one_m_reg_reg is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '31' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '17' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+DSP Report: Generating DSP fpuMul/_T_163, operation Mode is: A*B.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: Generating DSP fpuMul/one_m_reg_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register fpuMul/one_m_reg_reg is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '31' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '17' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+DSP Report: Generating DSP fpuMul/_T_163, operation Mode is: A*B.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: Generating DSP fpuMul/one_m_reg_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register fpuMul/one_m_reg_reg is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '31' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fpuMul/one_m_reg_reg' and it is trimmed from '48' to '17' bits. [d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/ipshared/07a9/src/CNNAccelerator.v:228723]
+DSP Report: Generating DSP fpuMul/_T_163, operation Mode is: A*B.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/_T_163.
+DSP Report: Generating DSP fpuMul/one_m_reg_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register fpuMul/one_m_reg_reg is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+DSP Report: operator fpuMul/_T_163 is absorbed into DSP fpuMul/one_m_reg_reg.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[16]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[15]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[14]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[13]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[12]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[11]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[10]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[9]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[8]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[7]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[6]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[5]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[4]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[3]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[2]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[1]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[0]) is unused and will be removed from module MACCNN__1.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[16]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[15]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[14]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[13]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[12]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[11]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[10]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[9]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[8]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[7]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[6]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[5]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[4]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[3]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[2]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[1]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[0]) is unused and will be removed from module MACCNN__2.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[16]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[15]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[14]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[13]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[12]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[11]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[10]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[9]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[8]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[7]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[6]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[5]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[4]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[3]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[2]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[1]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[0]) is unused and will be removed from module MACCNN__3.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[16]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[15]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[14]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[13]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[12]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[11]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[10]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[9]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[8]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[7]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[6]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[5]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[4]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[3]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[2]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[1]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[0]) is unused and will be removed from module MACCNN__4.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[16]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[15]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[14]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[13]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[12]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[11]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[10]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[9]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[8]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[7]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[6]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[5]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[4]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[3]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[2]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[1]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[0]) is unused and will be removed from module MACCNN__5.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[16]) is unused and will be removed from module MACCNN__6.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[15]) is unused and will be removed from module MACCNN__6.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[14]) is unused and will be removed from module MACCNN__6.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[13]) is unused and will be removed from module MACCNN__6.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[12]) is unused and will be removed from module MACCNN__6.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[11]) is unused and will be removed from module MACCNN__6.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[10]) is unused and will be removed from module MACCNN__6.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[9]) is unused and will be removed from module MACCNN__6.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[8]) is unused and will be removed from module MACCNN__6.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[7]) is unused and will be removed from module MACCNN__6.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[6]) is unused and will be removed from module MACCNN__6.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[5]) is unused and will be removed from module MACCNN__6.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[4]) is unused and will be removed from module MACCNN__6.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[3]) is unused and will be removed from module MACCNN__6.
+WARNING: [Synth 8-3332] Sequential element (fpuMul/one_m_reg_reg[2]) is unused and will be removed from module MACCNN__6.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:08:28 ; elapsed = 00:08:58 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-7048] Resources of type BRAM have been overutilized even after performing resource management. Used = 2048, Available = 1510. 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|memBank     | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_1   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_2   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_3   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_4   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_5   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_6   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_7   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_8   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_9   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_10  | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_11  | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_12  | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_13  | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_14  | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_15  | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------+-----------+----------------------+-------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives  | 
++------------+------------+-----------+----------------------+-------------+
+|fifo_in_30  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_27  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_22  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_18  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_16  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_31  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_29  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_28  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_26  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_25  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_24  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_23  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_21  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_20  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_19  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_17  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
++------------+------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below)
++----------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|matrixLoadStore | A*B             | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixLoadStore | (PCIN>>17)+A*B  | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixLoadStore | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixLoadStore | (PCIN>>17)+A*B  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixLoadStore | A*B             | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixLoadStore | (PCIN>>17)+A*B  | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixLoadStore | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixLoadStore | (PCIN>>17)+A*B  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixLoadStore | A2*B            | 15     | 15     | -      | -      | 15     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixLoadStore | A2*B            | 18     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixLoadStore | (PCIN>>17)+A2*B | 15     | 15     | -      | -      | 15     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|pipeFPUMul32    | A*B             | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pipeFPUMul32    | (PCIN>>17)+A*B  | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|pipeFPUMul32    | A*B             | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pipeFPUMul32    | (PCIN>>17)+A*B  | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|pipeFPUMul32    | A*B             | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pipeFPUMul32    | (PCIN>>17)+A*B  | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|pipeFPUMul32    | A*B             | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pipeFPUMul32    | (PCIN>>17)+A*B  | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|pipeFPUMul32    | A*B             | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pipeFPUMul32    | (PCIN>>17)+A*B  | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|pipeFPUMul32    | A*B             | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pipeFPUMul32    | (PCIN>>17)+A*B  | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|pipeFPUMul32    | A*B             | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pipeFPUMul32    | (PCIN>>17)+A*B  | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|pipeFPUMul32    | A*B             | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pipeFPUMul32    | (PCIN>>17)+A*B  | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++----------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:40 ; elapsed = 00:09:10 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:08:44 ; elapsed = 00:09:14 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|memBank     | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_1   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_2   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_3   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_4   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_5   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_6   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_7   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_8   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_9   | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_10  | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_11  | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_12  | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_13  | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_14  | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|memBank_15  | memSysInst/MemBank_reg | 48 K x 32(READ_FIRST)  | W |   | 48 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++------------+------------+-----------+----------------------+-------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives  | 
++------------+------------+-----------+----------------------+-------------+
+|fifo_in_30  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_27  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_22  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_18  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_16  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_31  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_29  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_28  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_26  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_25  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_24  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_23  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_21  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_20  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_19  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
+|fifo_in_17  | ram_reg    | Implied   | 8 x 32               | RAM32M x 6  | 
++------------+------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank/memSysInst/MemBank_reg_1_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_1/memSysInst/MemBank_reg_1_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_2/memSysInst/MemBank_reg_1_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_3/memSysInst/MemBank_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_3/memSysInst/MemBank_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_3/memSysInst/MemBank_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memSysInsti_0/inst/CNNAccelerator_v1_0_S00_AXI_inst/CNNInst/memSysInst/memBank_3/memSysInst/MemBank_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:09:06 ; elapsed = 00:09:43 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:09:22 ; elapsed = 00:10:00 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:22 ; elapsed = 00:10:00 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:31 ; elapsed = 00:10:09 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:09:34 ; elapsed = 00:10:12 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:09:37 ; elapsed = 00:10:15 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:09:37 ; elapsed = 00:10:15 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |  6038|
+|2     |DSP48E1  |   160|
+|8     |LUT1     |  2390|
+|9     |LUT2     |  7573|
+|10    |LUT3     | 11324|
+|11    |LUT4     | 16905|
+|12    |LUT5     | 11049|
+|13    |LUT6     | 30102|
+|14    |MUXF7    |  4096|
+|15    |MUXF8    |  1936|
+|16    |RAM32M   |    80|
+|17    |RAM32X1D |    32|
+|18    |RAMB36E1 |  1024|
+|20    |FDCE     |     8|
+|21    |FDRE     | 28914|
+|22    |FDSE     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:09:37 ; elapsed = 00:10:15 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 316 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:20 ; elapsed = 00:08:46 . Memory (MB): peak = 4646.559 ; gain = 2825.906
+Synthesis Optimization Complete : Time (s): cpu = 00:09:38 ; elapsed = 00:10:17 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 4646.559 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13366 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 4646.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 112 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 80 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 32 instances
+
+Synth Design complete, checksum: da3807c8
+INFO: [Common 17-83] Releasing license: Synthesis
+296 Infos, 216 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:10:25 ; elapsed = 00:11:05 . Memory (MB): peak = 4646.559 ; gain = 3363.477
+INFO: [Common 17-1381] The checkpoint 'D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_cnnRandomMem_0_0_synth_1/design_1_cnnRandomMem_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 4646.559 ; gain = 0.000
+write_verilog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4646.559 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 4646.559 ; gain = 0.000
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 335 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_cnnRandomMem_0_0_synth_1/design_1_cnnRandomMem_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 4646.559 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file design_1_cnnRandomMem_0_0_utilization_synth.rpt -pb design_1_cnnRandomMem_0_0_utilization_synth.pb
+write_verilog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4646.559 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 4646.559 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 10 15:30:50 2024...

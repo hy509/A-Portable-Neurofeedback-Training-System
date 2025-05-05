@@ -1,0 +1,172 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Nov 10 15:00:39 2024
+# Process ID: 14604
+# Current directory: D:/newCNNZ7/newCNNZ7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16656 D:\newCNNZ7\newCNNZ7\newCNNZ7.xpr
+# Log file: D:/newCNNZ7/newCNNZ7/vivado.log
+# Journal file: D:/newCNNZ7/newCNNZ7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/newCNNZ7/newCNNZ7/newCNNZ7.xpr
+INFO: [Project 1-313] Project file moved from 'G:/newCNNZ7/newCNNZ7' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/vitiswokspace/cnnTest/Debug/cnnTest.elf', nor could it be found using path 'G:/vitiswokspace/cnnTest/Debug/cnnTest.elf'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/vitiswokspace/MBCNN/Debug/MBCNN.elf', nor could it be found using path 'G:/vitiswokspace/MBCNN/Debug/MBCNN.elf'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/newCNNZ7/ip_repo/cnnRandomMem_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 1256.832 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:user:cnnRandomMem:1.0 - cnnRandomMem_0
+Successfully read diagram <design_1> from block design file <D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/design_1.bd>
+set_property range 512K [get_bd_addr_segs {microblaze_0/Data/SEG_dlmb_bram_if_cntlr_Mem}]
+set_property range 512K [get_bd_addr_segs {microblaze_0/Instruction/SEG_ilmb_bram_if_cntlr_Mem}]
+ipx::edit_ip_in_project -upgrade true -name cnnRandomMem_v1_0_project -directory D:/newCNNZ7/newCNNZ7/newCNNZ7.tmp/cnnRandomMem_v1_0_project d:/newCNNZ7/ip_repo/cnnRandomMem_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.1/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/newCNNZ7/ip_repo/cnnRandomMem_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'd:/newCNNZ7/ip_repo/cnnRandomMem_1.0/component.xml' ignored by IP packager.
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 30 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/newCNNZ7/ip_repo/cnnRandomMem_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/newCNNZ7/ip_repo/cnnRandomMem_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:cnnRandomMem:1.0 [get_ips  design_1_cnnRandomMem_0_0] -log ip_upgrade.log
+Upgrading 'D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_cnnRandomMem_0_0_synth_1
+
+INFO: [IP_Flow 19-3422] Upgraded design_1_cnnRandomMem_0_0 (cnnRandomMem_v1.0 1.0) from revision 29 to revision 30
+INFO: [filemgmt 20-1667] Failed to open file "D:/vitiswokspace/MBCNN/Debug/MBCNN.elf"
+Wrote  : <D:\newCNNZ7\newCNNZ7\newCNNZ7.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/newCNNZ7/newCNNZ7/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_cnnRandomMem_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 5-700] No address spaces matched 'get_bd_addr_spaces -of_objects /processing_system7_0 -filter {path == /processing_system7_0/Data}'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_objects {}'
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+INFO: [filemgmt 20-1667] Failed to open file "D:/vitiswokspace/MBCNN/Debug/MBCNN.elf"
+Wrote  : <D:\newCNNZ7\newCNNZ7\newCNNZ7.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block cnnRandomMem_0 .
+Exporting to file d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2056.559 ; gain = 128.871
+catch { config_ip_cache -export [get_ips -all design_1_dlmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all design_1_ilmb_bram_if_cntlr_0] }
+catch { config_ip_cache -export [get_ips -all design_1_lmb_bram_0] }
+catch { config_ip_cache -export [get_ips -all design_1_cnnRandomMem_0_0] }
+export_ip_user_files -of_objects [get_files D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_dlmb_bram_if_cntlr_0_synth_1 design_1_ilmb_bram_if_cntlr_0_synth_1 design_1_lmb_bram_0_synth_1 design_1_cnnRandomMem_0_0_synth_1 -jobs 12
+[Sun Nov 10 15:08:33 2024] Launched design_1_dlmb_bram_if_cntlr_0_synth_1, design_1_ilmb_bram_if_cntlr_0_synth_1, design_1_lmb_bram_0_synth_1, design_1_cnnRandomMem_0_0_synth_1...
+Run output will be captured here:
+design_1_dlmb_bram_if_cntlr_0_synth_1: D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/runme.log
+design_1_ilmb_bram_if_cntlr_0_synth_1: D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_ilmb_bram_if_cntlr_0_synth_1/runme.log
+design_1_lmb_bram_0_synth_1: D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_lmb_bram_0_synth_1/runme.log
+design_1_cnnRandomMem_0_0_synth_1: D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_cnnRandomMem_0_0_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2056.559 ; gain = 0.000
+export_simulation -of_objects [get_files D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/newCNNZ7/newCNNZ7/newCNNZ7.ip_user_files/sim_scripts -ip_user_files_dir D:/newCNNZ7/newCNNZ7/newCNNZ7.ip_user_files -ipstatic_source_dir D:/newCNNZ7/newCNNZ7/newCNNZ7.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/newCNNZ7/newCNNZ7/newCNNZ7.cache/compile_simlib/modelsim} {questa=D:/newCNNZ7/newCNNZ7/newCNNZ7.cache/compile_simlib/questa} {riviera=D:/newCNNZ7/newCNNZ7/newCNNZ7.cache/compile_simlib/riviera} {activehdl=D:/newCNNZ7/newCNNZ7/newCNNZ7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {60} CONFIG.MMCM_CLKFBOUT_MULT_F {20.250} CONFIG.MMCM_CLKOUT0_DIVIDE_F {16.875} CONFIG.CLKOUT1_JITTER {180.523} CONFIG.CLKOUT1_PHASE_ERROR {162.874}] [get_bd_cells clk_wiz_1]
+endgroup
+validate_bd_design
+WARNING: [BD 5-700] No address spaces matched 'get_bd_addr_spaces -of_objects /processing_system7_0 -filter {path == /processing_system7_0/Data}'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_objects {}'
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+save_bd_design
+INFO: [filemgmt 20-1667] Failed to open file "D:/vitiswokspace/MBCNN/Debug/MBCNN.elf"
+Wrote  : <D:\newCNNZ7\newCNNZ7\newCNNZ7.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/synth_1
+
+reset_run design_1_microblaze_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_microblaze_0_0_synth_1
+
+reset_run design_1_dlmb_v10_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_dlmb_v10_0_synth_1
+
+reset_run design_1_ilmb_v10_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_ilmb_v10_0_synth_1
+
+reset_run design_1_mdm_1_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_mdm_1_0_synth_1
+
+reset_run design_1_clk_wiz_1_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_clk_wiz_1_0_synth_1
+
+reset_run design_1_rst_clk_wiz_1_100M_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_rst_clk_wiz_1_100M_0_synth_1
+
+reset_run design_1_xbar_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/newCNNZ7/newCNNZ7/newCNNZ7.runs/design_1_xbar_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [Device 21-403] Loading part xc7z100ffv900-2
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+Exporting to file d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File d:/newCNNZ7/newCNNZ7/newCNNZ7.gen/sources_1/bd/design_1/synth/design_1.hwdef

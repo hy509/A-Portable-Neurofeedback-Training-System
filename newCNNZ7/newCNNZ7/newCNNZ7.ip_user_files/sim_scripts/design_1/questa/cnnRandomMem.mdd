@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER cnnRandomMem
+	OPTION supported_peripherals = (cnnRandomMem);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = cnnRandomMem;
+END DRIVER

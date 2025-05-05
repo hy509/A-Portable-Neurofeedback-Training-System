@@ -1,0 +1,562 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sun Nov 10 15:08:01 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 29) to (Rev. 30)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Wed Sep 25 11:52:59 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 28) to (Rev. 29)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Wed Sep 25 10:33:42 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 27) to (Rev. 28)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Tue Sep 24 21:16:22 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 26) to (Rev. 27)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Tue Sep 24 20:37:02 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 25) to (Rev. 26)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Tue Sep 24 20:11:41 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 24) to (Rev. 25)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Tue Sep 24 17:18:35 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 23) to (Rev. 24)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Tue Sep 24 10:52:20 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 22) to (Rev. 23)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Tue Sep 24 10:23:40 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 21) to (Rev. 22)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Sep 23 22:54:02 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 20) to (Rev. 21)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Sep 23 22:26:18 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 19) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Sep 23 21:44:30 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 18) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Sep 23 21:06:44 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 17) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Sep 23 15:37:28 2024
+| Host         : LAPTOP-2EVIGIAG running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 16) to (Rev. 17)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Sep 23 14:58:31 2024
+| Host         : LAPTOP-2EVIGIAG running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 15) to (Rev. 16)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Sep 23 14:10:45 2024
+| Host         : LAPTOP-2EVIGIAG running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 14) to (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Sep 23 13:25:56 2024
+| Host         : LAPTOP-2EVIGIAG running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 13) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Sep 23 13:04:34 2024
+| Host         : LAPTOP-2EVIGIAG running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Sep 23 10:05:13 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 11) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Sep 23 09:45:00 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sun Sep 22 22:44:50 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sun Sep 22 21:16:41 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sun Sep 22 15:02:45 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sun Sep 22 14:49:15 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sat Sep 21 18:22:11 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sat Sep 21 15:59:09 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Fri Sep 20 21:36:02 2024
+| Host         : szdn-2024NAUJRE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z100ffv900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cnnRandomMem_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_cnnRandomMem_0_0 (xilinx.com:user:cnnRandomMem:1.0) from (Rev. 3) to (Rev. 4)
+

@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:D:/newCNNZ7/newCNNZ7/newCNNZ7.srcs/constrs_1/new/cnnRandom.xdc rfile:../../../newCNNZ7.srcs/constrs_1/new/cnnRandom.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AJ25 [get_ports reset_rtl_0]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AG21 [get_ports clk_100MHz]
